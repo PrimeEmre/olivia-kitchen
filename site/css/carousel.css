@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+.list_carousel {
+	width: auto;
+	position:relative;
+    }
+.list_carousel ul {
+	margin:0;
+	padding:0;
+	list-style: none;
+	display: block;
+	cursor:pointer;
+	}
+.list_carousel li {		
+	display: inline-block;
+	float: left;
+	display:block;
+	margin: 0;
+    }
+.list_carousel.responsive {
+	width: auto;
+}
+.list_carousel li span{
+	display: block;
+	margin: 0 0 7px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.list_carousel li span strong{color: #c7710c;}
+.list_carousel li a{}
+.list_carousel li p{margin: 0;}
+
+.list_carousel li .div-block{
+	margin: 0 0 28px 0;
+}
+
+#prev, #next{
+	display: block;
+	position: absolute;
+	top: -46px;
+	width: 9px;
+	height: 15px;
+	
+}
+#prev:hover, #next:hover{background-position: 0 bottom;}
+#prev{
+	background: url(../img/prev.png) 0 0 no-repeat;
+	right: 80px;
+}
+#next{
+	background: url(../img/next.png) 0 0 no-repeat;
+	right: 60px;
+}
+@media (max-width: 979px){
+	#prev, #next{
+		top: -20px;
+	}
+	#prev{right: 30px;}
+	#next{right: 10px;}
+}
+
