@@ -1348,6 +1348,69 @@ body.lb-open { overflow: hidden; }
   font-size: 13px;
   margin-left: 25px;
 }
+/*------================== WELCOME & ABOUT ================= ------- */
+.welcome-section {
+  text-align: center;
+  padding: 52px 0 36px;
+}
+.welcome-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.welcome-label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 12px;
+}
+.welcome-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  color: #0d2b1f !important;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px !important;
+  line-height: 1.25;
+}
+.welcome-heading:after { display: none !important; }
+.welcome-sub {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #1a3d2b;
+  font-style: italic;
+  opacity: 0.7;
+  margin: 0;
+}
+.about-section {
+  text-align: center;
+  padding: 0 0 48px;
+  border-bottom: 1px solid rgba(13,43,31,0.12);
+  margin-bottom: 44px;
+}
+.about-inner {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.about-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.about-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #1a3d2b;
+  opacity: 0.85;
+  margin: 0;
+}
 /*------================== INFO SECTION ================= ------- */
 #info-section {
   background: linear-gradient(135deg, #0d2b1f 0%, #1a3d2b 60%, #0d2b1f 100%);
