@@ -1661,11 +1661,14 @@ footer em {
 }
 @media (max-width: 767px) {
   header {
-    background: #6d3b02;
+    background: linear-gradient(135deg, #0d2b1f 0%, #1a3d2b 60%, #0d2b1f 100%);
     padding-bottom: 10px;
   }
+  .navbar_ .navbar-inner {
+    background: linear-gradient(135deg, #0d2b1f 0%, #1a3d2b 60%, #0d2b1f 100%) !important;
+  }
   .navbar_ .navbar-inner > .clearfix {
-    border-bottom: none;
+    border-bottom: 1px solid rgba(201,168,76,0.25);
   }
   .navbar_ .nav-collapse_ .nav {
     display: none;
@@ -1681,10 +1684,14 @@ footer em {
     display: block !important;
     margin-bottom: 2px;
     width: 100%;
-    border: 1px solid #fff;
-    background: #c7710c;
-    color: #000;
+    border: 1px solid rgba(201,168,76,0.4);
+    background: #1a3d2b;
+    color: #c9a84c;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    border-radius: 4px;
   }
   .select-menu option {
     padding-bottom: 3px;
