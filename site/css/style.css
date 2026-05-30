@@ -1690,11 +1690,20 @@ footer em {
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
-    padding: 8px 12px;
+    padding: 10px 12px 12px;
+    line-height: 1.6;
+    height: auto;
+    min-height: 44px;
     border-radius: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 13px;
   }
   .select-menu option {
-    padding-bottom: 3px;
+    padding: 8px 12px;
+    line-height: 1.6;
+    background: #1a3d2b;
+    color: #c9a84c;
   }
   .block-indent {
     margin-bottom: 40px;
