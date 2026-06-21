@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Olivia Turkish &amp; Tapas - Menu</title>
+    <title>Olivia Turkish &amp; Tapas | Authentic Turkish &amp; Mediterranean Restaurant in Ottawa</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Olivia Turkish &amp; Tapas in Ottawa serves authentic Turkish meze, tapas, seafood wraps, main dishes, and more. Visit us at 3310 McCarthy Rd or call 613-733-3337.">
+    <meta name="keywords" content="Turkish restaurant Ottawa, tapas Ottawa, meze Ottawa, Mediterranean food Ottawa, Turkish food, Olivia Kitchen, 3310 McCarthy Rd">
+    <meta name="author" content="Olivia Turkish &amp; Tapas">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.oliviakitchen.ca/">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant.restaurant">
+    <meta property="og:title" content="Olivia Turkish &amp; Tapas | Authentic Turkish &amp; Mediterranean Restaurant in Ottawa">
+    <meta property="og:description" content="Authentic Turkish meze, tapas, seafood, and Mediterranean dishes. Located at 3310 McCarthy Rd, Ottawa. Open Mon–Sat.">
+    <meta property="og:url" content="https://www.oliviakitchen.ca/">
+    <meta property="og:image" content="https://www.oliviakitchen.ca/img/slide.jpg">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:site_name" content="Olivia Turkish &amp; Tapas">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Olivia Turkish &amp; Tapas | Ottawa">
+    <meta name="twitter:description" content="Authentic Turkish meze, tapas, seafood, and Mediterranean dishes in Ottawa.">
+    <meta name="twitter:image" content="https://www.oliviakitchen.ca/img/slide.jpg">
+
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <meta name="description" content="Your description">
-    <meta name="keywords" content="Your keywords">
-    <meta name="author" content="Your name">
-    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Olivia Turkish & Tapas",
+      "image": "https://www.oliviakitchen.ca/img/slide.jpg",
+      "url": "https://www.oliviakitchen.ca/",
+      "telephone": "+16137333337",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3310 McCarthy Rd",
+        "addressLocality": "Ottawa",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.3497,
+        "longitude": -75.7195
+      },
+      "sameAs": ["https://www.instagram.com/oliviakitchen.ca"],
+      "servesCuisine": ["Turkish", "Mediterranean", "Tapas"],
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday",    "opens": "10:00", "closes": "20:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday",   "opens": "10:00", "closes": "21:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:00", "closes": "21:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday",  "opens": "10:00", "closes": "21:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday",    "opens": "10:00", "closes": "22:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday",  "opens": "10:00", "closes": "22:00" }
+      ],
+      "priceRange": "$$",
+      "currenciesAccepted": "CAD"
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
@@ -79,7 +135,7 @@
 
    <div class="slider">
     <div class="container">
-      <h1 class="brand"><a href="index.html"><img src="img/logo.png" alt=""></a><span>OLIVIA Turkish & Tapas</span></h1>   
+      <h1 class="brand"><a href="index.html"><img src="img/logo.png" alt="Olivia Turkish &amp; Tapas logo"></a><span>OLIVIA Turkish &amp; Tapas</span></h1>   
       <div class="text-header">
         Now <br> Open!!
       </div> 
@@ -146,12 +202,12 @@ Empanada Veggie</span>
       </div>
       
    </div>
-   <div class="navbar navbar_ navbar-fullwidth clearfix">
+   <nav class="navbar navbar_ navbar-fullwidth clearfix" aria-label="Main navigation">
       <div class="navbar-inner">
         <div class="container">
           <div class="clearfix">
             <ul class="soc-icons">
-              <li><a href="https://www.instagram.com/oliviakitchen.ca" class="icon-2" target="_blank" rel="noopener"></a></li>
+              <li><a href="https://www.instagram.com/oliviakitchen.ca" class="nav-insta-icon" target="_blank" rel="noopener noreferrer" aria-label="Olivia Kitchen on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
             <div class="nav-collapse nav-collapse_ collapse">
               <ul class="nav sf-menu clearfix">
@@ -164,14 +220,15 @@ Empanada Veggie</span>
                 <li><a href="#desserts-drinks" class="scroll-link">Desserts &amp; Drinks</a></li>
                 <li><a href="#drinks" class="scroll-link">Drinks</a></li>
                 <li><a href="#info-section" class="scroll-link">Contact Us</a></li>
+                <li><a href="#instagram-feed" class="scroll-link">Instagram</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-   </div> 
+   </nav>
 </header>
-<div id="content">
+<main id="content">
   <div class="container"> 
     <div class="row">
      
@@ -200,7 +257,7 @@ Empanada Veggie</span>
           <ul class="thumbnails-1">
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Carrot Meze.jpg" alt="Carrot Meze"></figure>
+                <figure class="img-polaroid"><img src="img/Carrot Meze.jpg" alt="Carrot Meze" loading="lazy"></figure>
                 <span class="cost">$8.00</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Carrot Meze</a></strong>
@@ -210,7 +267,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Roasted Pepper Yogurt.jpg" alt="Roasted Pepper Yogurt"></figure>
+                <figure class="img-polaroid"><img src="img/Roasted Pepper Yogurt_Crpopped.JPG" alt="Roasted Pepper Yogurt" loading="lazy"></figure>
                 <span class="cost">$8.00</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Roasted Pepper Yogurt</a></strong>
@@ -220,7 +277,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/WhatsApp%20Image%202026-05-29%20at%203.17.15%20PM.jpeg" alt="Hummus"></figure>
+                <figure class="img-polaroid"><img src="img/Hummus.png" alt="Hummus" loading="lazy"></figure>
                 <span class="cost">$8.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Hummus</a></strong>
@@ -240,7 +297,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Kuru%20dolma.jpeg" alt="Kuru Dolma"></figure>
+                <figure class="img-polaroid"><img src="img/kuru_dolma.png" alt="Kuru Dolma" loading="lazy"></figure>
                 <span class="cost">$12.00</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Kuru Dolma</a></strong>
@@ -287,7 +344,7 @@ Empanada Veggie</span>
           <ul class="thumbnails-1">
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Empanada Veggie.jpg" alt="Empanada Veggie"></figure>
+                <figure class="img-polaroid"><img src="img/Empanada Veggie.jpg" alt="Empanada Veggie" loading="lazy"></figure>
                 <span class="cost">$14.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Empanada Veggie</a></strong>
@@ -297,7 +354,7 @@ Empanada Veggie</span>
             </li>
             <!-- <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/WhatsApp%20Image%202026-05-13%20at%2011.00.48%20AM.jpeg" alt="Nachos"></figure>
+                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/WhatsApp%20Image%202026-05-13%20at%2011.00.48%20AM.jpeg" alt="Nachos" loading="lazy"></figure>
                 <span class="cost">$18.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Nachos</a></strong>
@@ -307,7 +364,7 @@ Empanada Veggie</span>
             </li> -->
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Glazed Brussels Sprouts.jpg" alt="Glazed Brussels Sprouts"></figure>
+                <figure class="img-polaroid"><img src="img/Glazed Brussels Sprouts.jpg" alt="Glazed Brussels Sprouts" loading="lazy"></figure>
                 <span class="cost">$15.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Glazed Brussels Sprouts</a></strong>
@@ -317,7 +374,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Patatas Bravas.jpg" alt="Patatas Bravas"></figure>
+                <figure class="img-polaroid"><img src="img/Patatas Bravas.jpg" alt="Patatas Bravas" loading="lazy"></figure>
                 <span class="cost">$7.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Patatas Bravas</a></strong>
@@ -327,7 +384,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Mediterranean Eggplant.jpg" alt="Mediterranean Eggplant"></figure>
+                <figure class="img-polaroid"><img src="img/Mediterranean Eggplant.jpg" alt="Mediterranean Eggplant" loading="lazy"></figure>
                 <span class="cost">$14.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Mediterranean Eggplant</a></strong>
@@ -337,7 +394,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Icli Kofte.jpg" alt="Icli Kofte"></figure>
+                <figure class="img-polaroid"><img src="img/Icli Kofte.jpg" alt="Icli Kofte" loading="lazy"></figure>
                 <span class="cost">$11.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Icli Kofte</a></strong>
@@ -347,7 +404,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Sweet French Fries.jpg" alt="Sweet French Fries"></figure>
+                <figure class="img-polaroid"><img src="img/Sweet French Fries.jpg" alt="Sweet French Fries" loading="lazy"></figure>
                 <span class="cost">$11.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Sweet French Fries</a></strong>
@@ -357,7 +414,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Falafel Plate.jpg" alt="Falafel Plate"></figure>
+                <figure class="img-polaroid"><img src="img/Falafel Plate.jpg" alt="Falafel Plate" loading="lazy"></figure>
                 <span class="cost">$10.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Falafel Plate</a></strong>
@@ -377,7 +434,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Poutine.jpg" alt="Poutine"></figure>
+                <figure class="img-polaroid"><img src="img/Poutine.jpg" alt="Poutine" loading="lazy"></figure>
                 <span class="cost">$8.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Poutine</a></strong>
@@ -394,7 +451,7 @@ Empanada Veggie</span>
           <ul class="thumbnails-1">
             <!-- <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Gambas.jpeg" alt="Gambas"></figure>
+                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Gambas.jpeg" alt="Gambas" loading="lazy"></figure>
                 <span class="cost">$16.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Gambas</a></strong>
@@ -404,7 +461,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Gambas.jpeg" alt="Sambal Shrimp"></figure>
+                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Gambas.jpeg" alt="Sambal Shrimp" loading="lazy"></figure>
                 <span class="cost">$16.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Sambal Shrimp</a></strong>
@@ -414,7 +471,7 @@ Empanada Veggie</span>
             </li> -->
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/chicken%20tacos.jpeg" alt="Chicken Tacos"></figure>
+                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/chicken%20tacos.jpeg" alt="Chicken Tacos" loading="lazy"></figure>
                 <span class="cost">$19.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Chicken Tacos</a></strong>
@@ -424,7 +481,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/WhatsApp%20Image%202026-05-10%20at%208.00.00%20PM.jpeg" alt="Lamb Tacos"></figure>
+                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/WhatsApp%20Image%202026-05-10%20at%208.00.00%20PM.jpeg" alt="Lamb Tacos" loading="lazy"></figure>
                 <span class="cost">$24.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Lamb Tacos</a></strong>
@@ -434,7 +491,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Chicken Döner Wrap.jpg" alt="Chicken Döner Wrap"></figure>
+                <figure class="img-polaroid"><img src="img/Chicken Döner Wrap.jpg" alt="Chicken Döner Wrap" loading="lazy"></figure>
                 <span class="cost">$13.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Chicken Döner Wrap</a></strong>
@@ -444,7 +501,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/WhatsApp%20Image%202026-05-29%20at%203.49.23%20PM.jpeg" alt="Falafel Wrap"></figure>
+                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/WhatsApp%20Image%202026-05-29%20at%203.49.23%20PM.jpeg" alt="Falafel Wrap" loading="lazy"></figure>
                 <span class="cost">$11.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Falafel Wrap</a></strong>
@@ -454,7 +511,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Beef Sandwich.jpg" alt="Beef Sandwich"></figure>
+                <figure class="img-polaroid"><img src="img/Beef Sandwich.jpg" alt="Beef Sandwich" loading="lazy"></figure>
                 <span class="cost">$15.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Beef Sandwich</a></strong>
@@ -464,7 +521,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Adana Kebap Wrap.jpg" alt="Adana Kebap Wrap"></figure>
+                <figure class="img-polaroid"><img src="img/Adana Kebap Wrap.jpg" alt="Adana Kebap Wrap" loading="lazy"></figure>
                 <span class="cost">$16.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Adana Kebap Wrap</a></strong>
@@ -481,7 +538,7 @@ Empanada Veggie</span>
           <ul class="thumbnails-1">
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Chicken%20Shish.jpeg" alt="Chicken Shish Plate"></figure>
+                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Chicken%20Shish.jpeg" alt="Chicken Shish Plate" loading="lazy"></figure>
                 <span class="cost">$20.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Chicken Shish Plate</a></strong>
@@ -491,7 +548,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Chicken%20Shish.jpeg" alt="Chicken Shish Plate"></figure>
+                <figure class="img-polaroid"><img src="img/doner_bowl.jpg" alt="Chicken Shish Plate" loading="lazy"></figure>
                 <span class="cost">$20.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Chicken Doner Bowl</a></strong>
@@ -501,7 +558,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Carne Picante.jpg" alt="Carne Picante"></figure>
+                <figure class="img-polaroid"><img src="img/Carne Picante.jpg" alt="Carne Picante" loading="lazy"></figure>
                 <span class="cost">$23.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Carne Picante</a></strong>
@@ -511,7 +568,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Kofte.jpg" alt="Grilled Kofte"></figure>
+                <figure class="img-polaroid"><img src="img/Kofte.jpg" alt="Grilled Kofte" loading="lazy"></figure>
                 <span class="cost">$21.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Grilled Kofte</a></strong>
@@ -521,7 +578,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Lahmacun.jpg" alt="Lahmacun"></figure>
+                <figure class="img-polaroid"><img src="img/Lahmacun.jpg" alt="Lahmacun" loading="lazy"></figure>
                 <span class="cost">$15.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Lahmacun</a></strong>
@@ -531,7 +588,7 @@ Empanada Veggie</span>
             </li>
                      <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/manti.jpg" alt="Manti"></figure>
+                <figure class="img-polaroid"><img src="img/manti_cropped.jpg" alt="Manti" loading="lazy"></figure>
                 <span class="cost">$18.99</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Manti</a></strong>
@@ -593,7 +650,7 @@ Empanada Veggie</span>
           <ul class="thumbnails-1">
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Trilece.jpg" alt="Trilece"></figure>
+                <figure class="img-polaroid"><img src="img/Trilece.jpg" alt="Trilece" loading="lazy"></figure>
                 <span class="cost">$11.00</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Trilece</a></strong>
@@ -603,7 +660,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Kunefe.jpeg" alt="Kunefe"></figure>
+                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/Kunefe.jpeg" alt="Kunefe" loading="lazy"></figure>
                 <span class="cost">$10.00</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Kunefe</a></strong>
@@ -613,7 +670,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/WhatsApp%20Image%202026-05-29%20at%203.40.21%20PM.jpeg" alt="Baklava"></figure>
+                <figure class="img-polaroid"><img src="https://img1.wsimg.com/isteam/ip/5bfadb14-96c1-41bf-ac7e-4b9be5bde066/WhatsApp%20Image%202026-05-29%20at%203.40.21%20PM.jpeg" alt="Baklava" loading="lazy"></figure>
                 <span class="cost">$10.00</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Baklava (2 pcs)</a></strong>
@@ -623,7 +680,7 @@ Empanada Veggie</span>
             </li>
             <li class="thumbnail-1 span3">
               <div class="maxheight block-thumbnail-1">
-                <figure class="img-polaroid"><img src="img/Sutlac.jpg" alt="Sutlac"></figure>
+                <figure class="img-polaroid"><img src="img/Sutlac.jpg" alt="Sutlac" loading="lazy"></figure>
                 <span class="cost">$8.00</span>
                 <div class="extra-wrap">
                   <strong><a href="#">Sutlac</a></strong>
@@ -692,30 +749,71 @@ Empanada Veggie</span>
         </div>
       </div>
 
-      <div class="span4 offset1">
+      <div class="span3">
         <h3 class="info-heading">Hours</h3>
         <table class="hours-table">
           <tbody>
-            <tr class="closed"><td>Monday</td><td>Closed</td></tr>
+            <tr><td>Monday</td><td>10:00 am – 8:00 pm</td></tr>
             <tr><td>Tuesday</td><td>10:00 am – 9:00 pm</td></tr>
             <tr><td>Wednesday</td><td>10:00 am – 9:00 pm</td></tr>
             <tr><td>Thursday</td><td>10:00 am – 9:00 pm</td></tr>
             <tr><td>Friday</td><td>10:00 am – 10:00 pm</td></tr>
             <tr><td>Saturday</td><td>10:00 am – 10:00 pm</td></tr>
-            <tr><td>Sunday</td><td>10:00 am – 8:00 pm</td></tr>
+            <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
           </tbody>
         </table>
+        <a href="https://www.instagram.com/oliviakitchen.ca" class="insta-link" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i> @oliviakitchen.ca
+        </a>
+      </div>
+
+      <div class="span4 offset1">
+        <h3 class="info-heading">Contact Us</h3>
+        <form id="contact-form" action="https://formspree.io/f/mkolwqav" method="POST">
+          <div style="margin-bottom:12px">
+            <label for="cf-name" style="display:block;color:#c9a84c;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 4px;line-height:1;font-weight:600">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" required style="display:block;width:100%;box-sizing:border-box;background:rgba(255,255,255,0.06);border:1px solid rgba(201,168,76,0.35);border-radius:3px;color:#f0ebe0;font-size:14px;padding:9px 12px;margin:0;height:auto;line-height:1.4;outline:none;font-family:inherit">
+          </div>
+          <div style="margin-bottom:12px">
+            <label for="cf-email" style="display:block;color:#c9a84c;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 4px;line-height:1;font-weight:600">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="Your email" required style="display:block;width:100%;box-sizing:border-box;background:rgba(255,255,255,0.06);border:1px solid rgba(201,168,76,0.35);border-radius:3px;color:#f0ebe0;font-size:14px;padding:9px 12px;margin:0;height:auto;line-height:1.4;outline:none;font-family:inherit">
+          </div>
+          <div style="margin-bottom:16px">
+            <label for="cf-message" style="display:block;color:#c9a84c;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 4px;line-height:1;font-weight:600">Message</label>
+            <textarea id="cf-message" name="message" rows="4" placeholder="How can we help?" required style="display:block;width:100%;box-sizing:border-box;background:rgba(255,255,255,0.06);border:1px solid rgba(201,168,76,0.35);border-radius:3px;color:#f0ebe0;font-size:14px;padding:9px 12px;margin:0;height:auto;line-height:1.4;outline:none;font-family:inherit;resize:vertical"></textarea>
+          </div>
+          <button type="submit" class="contact-submit">Send Message</button>
+        </form>
       </div>
 
     </div>
   </div>
 </section>
 
+<!-- INSTAGRAM FEED -->
+<section id="instagram-feed">
+  <div class="container">
+    <div class="section-insta-header">
+      <i class="fa-brands fa-instagram"></i>
+      <h2>Follow Us on Instagram</h2>
+      <a href="https://www.instagram.com/oliviakitchen.ca" target="_blank" rel="noopener noreferrer">@oliviakitchen.ca</a>
+    </div>
+    <!-- Behold.so widget — paste your widget <div> + <script> here -->
+    <!-- Steps: go to behold.so → "Get started free" → connect @oliviakitchen.ca → copy the embed code and replace this comment -->
+    <div id="behold-placeholder">
+      <a href="https://www.instagram.com/oliviakitchen.ca" target="_blank" rel="noopener noreferrer" class="insta-cta-btn">
+        <i class="fa-brands fa-instagram"></i> View our Instagram
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
 <footer>
   <div class="container">
         <div class="row"><div class="span12"></div>
           <article class="span3 fleft">
-                 <span><a href="index.html"><img src="img/logo-1.png" alt=""></a></span> <em>&copy; 2026 &nbsp;&nbsp;<span class="br-footer"><a href="index-5.html">Privacy Policy</a></em>
+                 <span><a href="index.html"><img src="img/logo-1.png" alt="Olivia Turkish &amp; Tapas"></a></span> <em>&copy; 2026 &nbsp;&nbsp;<span class="br-footer"><a href="index-5.html">Privacy Policy</a></em>
            </article></div>
          <div class="row">
         
@@ -825,5 +923,6 @@ Empanada Veggie</span>
     if (e.key === 'ArrowRight') $('#lb-next').trigger('click');
   });
 </script>
+
 </body>
 </html>

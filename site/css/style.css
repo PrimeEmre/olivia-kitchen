@@ -562,6 +562,110 @@ header {
 body {
   background-color: rgba(13, 43, 31, 0.08);
 }
+/* Instagram link — Hours section */
+.insta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: #c9a84c;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.insta-link i {
+  font-size: 22px;
+  color: #c9a84c;
+  transition: color 0.2s;
+}
+.insta-link:hover,
+.insta-link:hover i { color: #e8c96a; }
+
+/* Instagram icon — navbar */
+.nav-insta-icon {
+  display: inline-flex;
+  align-items: center;
+  color: #d4c9b0;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-insta-icon:hover { color: #c9a84c; }
+
+/* Contact Form */
+.contact-submit {
+  background: #c9a84c;
+  color: #1a1a1a;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 11px 28px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+.contact-submit:hover { background: #e8c96a; }
+
+/* Instagram Feed Section */
+#instagram-feed {
+  background: #1a1a1a;
+  padding: 60px 0 50px;
+  text-align: center;
+}
+.section-insta-header {
+  margin-bottom: 36px;
+}
+.section-insta-header i {
+  font-size: 36px;
+  color: #c9a84c;
+  display: block;
+  margin-bottom: 10px;
+}
+.section-insta-header h2 {
+  font-size: 26px;
+  color: #f0ebe0;
+  margin: 0 0 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.section-insta-header a {
+  color: #c9a84c;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.section-insta-header a:hover { color: #e8c96a; }
+
+/* Behold widget override — ensure grid fits the dark background */
+#instagram-feed behold-widget,
+#instagram-feed [id^="behold"] { display: block; }
+
+/* Fallback CTA shown before widget is configured */
+#behold-placeholder {
+  padding: 20px 0 10px;
+}
+.insta-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #c9a84c;
+  color: #1a1a1a;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.insta-cta-btn i { font-size: 20px; }
+.insta-cta-btn:hover { background: #e8c96a; color: #1a1a1a; }
+
 /* Lightbox */
 body.lb-open { overflow: hidden; }
 .thumbnails-1 .img-polaroid img { cursor: zoom-in; }
@@ -638,11 +742,14 @@ body.lb-open { overflow: hidden; }
   overflow: hidden;
 }
 #lb-img {
-  width: 100%;
+  max-width: 100%;
   max-height: 58vh;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   object-position: center;
   display: block;
+  margin: 0 auto;
 }
 #lb-counter {
   position: absolute;
@@ -1241,7 +1348,7 @@ body.lb-open { overflow: hidden; }
   float: left;
   margin: 0;
   padding: 0;
-  min-height: 69px;
+  min-height: 0;
   width: 100%;
 }
 #contact-form .message {
@@ -1719,6 +1826,28 @@ footer em {
     overflow: visible;
   }
 }
+@media (max-width: 979px) {
+  /* Stack info section columns on tablet and below */
+  #info-section .row { display: flex; flex-direction: column; }
+  #info-section .span4,
+  #info-section .span3,
+  #info-section .offset1 {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 36px;
+    float: none !important;
+  }
+  #info-section .span4:last-child,
+  #info-section .span3:last-child { margin-bottom: 0; }
+
+  /* Instagram feed section heading on small screens */
+  .section-insta-header h2 { font-size: 20px; }
+
+  /* Contact form full width inputs */
+  .contact-field input,
+  .contact-field textarea { font-size: 16px; /* prevents iOS zoom */ }
+}
+
 @media (max-width: 767px) {
   header {
     background: linear-gradient(135deg, #0d2b1f 0%, #1a3d2b 60%, #0d2b1f 100%);
@@ -1848,6 +1977,12 @@ footer em {
 }
 @media (max-width: 626px) {
   
+}
+@media (max-width: 530px) {
+  .contact-submit { width: 100%; text-align: center; padding: 13px; }
+  .insta-cta-btn { width: 100%; justify-content: center; box-sizing: border-box; }
+  #info-section { padding: 40px 15px; }
+  #instagram-feed { padding: 40px 15px 36px; }
 }
 @media (max-width: 530px) {
   .img-indent .img-polaroid {
