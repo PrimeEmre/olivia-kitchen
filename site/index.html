@@ -209,6 +209,11 @@ Empanada Veggie</span>
             <ul class="soc-icons">
               <li><a href="https://www.instagram.com/oliviakitchen.ca" class="nav-insta-icon" target="_blank" rel="noopener noreferrer" aria-label="Olivia Kitchen on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+              <span class="toggle-label">Menu</span>
+              <i class="fa-solid fa-bars toggle-icon-open"></i>
+              <i class="fa-solid fa-xmark toggle-icon-close" style="display:none"></i>
+            </button>
             <div class="nav-collapse nav-collapse_ collapse">
               <ul class="nav sf-menu clearfix">
                 <li class="active"><a href="index.html">Home</a></li>
@@ -236,6 +241,9 @@ Empanada Veggie</span>
       <article class="span12 welcome-section">
         <div class="welcome-inner">
           <p class="welcome-label">Welcome</p>
+          <a href="https://www.instagram.com/oliviakitchen.ca" class="welcome-insta-link" target="_blank" rel="noopener noreferrer" aria-label="Olivia Kitchen on Instagram">
+            <i class="fa-brands fa-instagram"></i> @oliviakitchen.ca
+          </a>
           <h2 class="welcome-heading">Authentic Turkish &amp; Tapas Dining</h2>
           <p class="welcome-sub">Experience flavourful cuisine in a welcoming atmosphere</p>
         </div>
@@ -921,6 +929,37 @@ Empanada Veggie</span>
     if (e.key === 'Escape') lbClose();
     if (e.key === 'ArrowLeft') $('#lb-prev').trigger('click');
     if (e.key === 'ArrowRight') $('#lb-next').trigger('click');
+  });
+
+  // Mobile hamburger menu toggle
+  $('.mobile-nav-toggle').on('click', function() {
+    var $btn = $(this);
+    var $menu = $('.navbar_ .sf-menu');
+    var isOpen = $menu.is(':visible');
+    if (isOpen) {
+      $menu.slideUp(250);
+      $btn.attr('aria-expanded', 'false');
+      $btn.find('.toggle-icon-open').show();
+      $btn.find('.toggle-icon-close').hide();
+      $btn.removeClass('is-open');
+    } else {
+      $menu.slideDown(250);
+      $btn.attr('aria-expanded', 'true');
+      $btn.find('.toggle-icon-open').hide();
+      $btn.find('.toggle-icon-close').show();
+      $btn.addClass('is-open');
+    }
+  });
+
+  // Close mobile menu when a link is clicked
+  $(document).on('click', '.navbar_ .sf-menu a', function() {
+    if ($(window).width() < 768) {
+      $('.navbar_ .sf-menu').slideUp(250);
+      $('.mobile-nav-toggle').attr('aria-expanded', 'false')
+        .find('.toggle-icon-open').show().end()
+        .find('.toggle-icon-close').hide()
+        .end().removeClass('is-open');
+    }
   });
 </script>
 
